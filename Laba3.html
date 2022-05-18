@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Оформлення замовлення</title>
+</head>
+
+<body>
+    <form id="Order"></form>
+    <table border="1">
+<tr>
+    <td colspan="2">
+        <center>
+    <p><b>Оформлення замовлення</b></p>
+        </center>
+    </td>
+</tr>
+<tr>
+    <td>
+        <label for="PIB">ПІБ</label>
+    </td>
+    <td>
+        <input type="text" id="PIB" name="PIB" form="Order" placeholder="Прізвище Ім'я По Батькові ">        
+    </td>
+    
+</tr>
+<tr>
+   <td>
+   <label for="number">Номер телефону</label>
+   </td>
+   <td>
+       <input type="text" id="number" name="number" form="Order" placeholder="+38096xxxxx">
+   </td>
+</tr>
+<tr>
+    <td>
+        <label for="email">E-mail</label>
+    </td>
+    <td>
+        <input type="email"  id="email" name="email" form="Order" placeholder="email@gmail.com">
+    </td>
+</tr>
+<tr>
+    <td>
+        <label for="dostavka">Спосіб доставки</label>
+    </td>
+    <td >
+        <input type="radio" id="dostavka" name="dostavka">Нова пошта
+        <input type="radio"  name="dostavka">Укрпошта
+        
+    </td>
+</tr>
+<tr>
+    <td>
+        <label for="viddilennia">Номер відділення</label>
+    </td>
+    <td>
+        <select name="viddilennia" id="viddilennia">
+        <option  selected value="x1">Відділення №1</option>
+        <option value="x1">Відділення №2</option>
+        <option value="x1">Відділення №3</option>
+        <option value="x1">Відділення №4</option>
+        </select>
+        
+    </td>
+</tr>
+<tr>
+    <td>
+        <label for="data">Дата відправлення</label>
+    </td>
+    <td>
+        <input type="date" id="data" name="data" form="Order">
+    </td>
+</tr>
+<tr>
+    <td colspan="2">
+        <label for="comment">Коментар:</label>
+    </td>
+</tr>
+<tr>
+    <td colspan="2">
+        <textarea id="comment" name="comment" form="Order"></textarea>
+    </td>
+</tr>
+<tr>
+    <td colspan="2">
+        <input type="submit" name="save" form="Order">
+    </td>
+</tr>
+
+    </table>
+    
+
+</body>
+
+</html>
